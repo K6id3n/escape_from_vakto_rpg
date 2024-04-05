@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escape From Valkto</title>
     <style>
         body {
-            margin: 0%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     </style>
 </head>
+
 <body>
-    <script type="module">
-        import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
-        kaboom();
-        add([
-            text("hello"),
-            pos(120, 80),
-        ]);
-        
-        </script>
+    <div id="start">
+        <p>start!</p>
+    </div>
+    <div class="cgr" id="cr" style="display: flex; flex-direction: column;">
+        <div class="crow"> <img src="wires/wire2.png" alt="wire" id="w1" onclick="rotate('w1', 0, 0)">
+            <img src="wires/wire2.png" alt="wire" id="w2" onclick="rotate('w2', 1, 1)">
+            <img src="wires/wire1.png" alt="wire" id="w3" onclick="rotate('w3', 2, 2)">
+            <img src="wires/wire1.png" alt="wire" id="w4" onclick="rotate('w4', 3, 3)">
+            <img src="wires/wire1.png" alt="wire" id="w5" onclick="rotate('w5', 4, 4)">
+        </div>
+        <div class="crow"> <img src="wires/wire1.png" alt="wire" id="w6" onclick="rotate('w6', 5, 5)">
+            <img src="wires/wire3.png" alt="wire" id="w7" onclick="rotate('w7', 6, 6)">
+            <img src="wires/wire4.png" alt="wire" id="w8" onclick="rotate('w8', 7, 7)">
+            <img src="wires/wire2.png" alt="wire" id="w9" onclick="rotate('w9', 8, 8)">
+            <img src="wires/wire5.png" alt="wire" id="w10" onclick="rotate('w10', 9, 9)">
+        </div>
+        <div class="crow">
+
+            <img src="wires/wire2.png" alt="wirw" id="w11" onclick="rotate('w11', 10, 10)">
+            <img src="wires/wire2.png" alt="wirw" id="w12" onclick="rotate('w12', 11, 11)">
+            <img src="wires/wire7.png" alt="wirw" id="w13" onclick="rotate('w13', 12, 12)">
+            <img src="wires/wire5.png" alt="wirw" id="w14" onclick="rotate('w14', 13, 13)">
+            <img src="wires/wire3.png" alt="wirw" id="w15" onclick="rotate('w15', 14, 14)">
+        </div>
+        <div class="crow"> <img src="wires/wire3.png" alt="wirw" id="w16" onclick="rotate('w16', 15, 15)">
+            <img src="wires/wire2.png" alt="wirw" id="w17" onclick="rotate('w17', 16, 16)">
+            <img src="wires/wire2.png" alt="wirw" id="w18" onclick="rotate('w18', 17, 17)">
+            <img src="wires/wire2.png" alt="wirw" id="w19" onclick="rotate('w19', 18, 18)">
+            <img src="wires/wire1.png" alt="wirw" id="w20" onclick="rotate('w20', 19, 19)">
+        </div>
+        <div class="crow">
+            <img src="wires/wire1.png" alt="wirw" id="w21" onclick="rotate('w21', 20, 20)">
+            <img src="wires/wire2.png" alt="wirw" id="w22" onclick="rotate('w22', 21, 21)">
+            <img src="wires/wire1.png" alt="wirw" id="w23" onclick="rotate('w23', 22, 22)">
+            <img src="wires/wire2.png" alt="wirw" id="w24" onclick="rotate('w24', 23, 23)">
+            <img src="wires/wire1.png" alt="wirw" id="w25" onclick="rotate('w25', 24, 24)">
+        </div>
+
+
+    </div>
+    <script src="puz.js"></script>
 </body>
+
 </html>
