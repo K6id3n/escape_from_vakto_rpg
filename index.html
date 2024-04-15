@@ -6,76 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escape From Valkto</title>
     <script src="https://kaboomjs.com/lib/0.5.1/kaboom.js"></script>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    </style>
 </head>
 
 <body>
-    <script type="module">
-        import kaboom from "./kaboom.mjs";
 
-        async function start() {
-            kaboom();
-
-            // Load the sprite
-            await loadSprite("grass", "textgrass.png");
-
-            const LEVELS = [
-                [
-                    "            ",
-                    "            ",
-                    "            ",
-                    "            ",
-                    "            ",
-                    "            ",
-                    "============",
-                ],
-            ];
-
-            const levelConf = {
-                tileWidth: 64,
-                tileHeight: 64,
-                tiles: {
-                    "=": () => [
-                        sprite("grass"),
-                        area(),
-                        body({ isStatic: true }),
-                        anchor("bot"),
-                        offscreen({ hide: true }),
-                        "platform",
-                    ],
-                },
-            };
-
-            scene("game", ({ levelId, coins } = { levelId: 0, coins: 0 }) => {
-
-                // add level to scene
-                const level = addLevel(LEVELS[levelId ?? 0], levelConf)
-
-                // define player object
-                const player = add([
-                    sprite("bean"),
-                    pos(0, 0),
-                    area(),
-                    scale(1),
-                    // makes it fall to gravity and jumpable
-                    body(),
-                    // the custom component we defined above
-                    big(),
-                    anchor("bot"),
-                ])
-
-            }
-            )
-        }
-
-        start()
-    </script>
 </body>
 
 </html>
