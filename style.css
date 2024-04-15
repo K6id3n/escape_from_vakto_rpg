@@ -18,13 +18,47 @@ body {
     width: 100%;
 }
 
-.pixel-corners {
+#start{
+    position: relative;
+    width: 100svw;
+    height: 100svh;
+    background-color: black;
+    display: none;
+    z-index: 1;
+}
+
+#number{
+    position: absolute;
+    color: white;
+    transition: ease-in 1s;
+    /* display: none; */
+    font-size: 10em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#dice{
+    /* display: none; */
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10svw;
+    height: 15svh;
+}
+
+.progress{
     position: absolute;
     top: 30px;
     left: 50%;
-    width: 95%;
+    width: 80%;
     height: 50px;
     transform: translate(-50%, -50%);
+}
+
+.pixel-corners {
+    width: 100%;
     /* transition: ease-in-out 1s; */
     padding: 0.5%;
     background-color: black;
