@@ -50,3 +50,13 @@ body {
       0px calc(100% - 8px)
     );
   }
+
+  .inventory {
+    position: absolute;
+    left: 98%;
+    top: 50%;
+  }
+
+  .inventoryNew {
+    left: 90%;
+  }
