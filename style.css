@@ -5,5 +5,10 @@
 }
 
 body {
-    
+    display: flex;
+    flex-direction: column;
+}
+
+.ground {
+    width: 100dvw;
 }
