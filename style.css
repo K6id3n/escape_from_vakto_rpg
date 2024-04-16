@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +10,7 @@ body {
     background-image: url(back1.png);
 }
 
+/* This is the grass background */
 .ground {
     position: fixed;
     bottom: 0;
@@ -18,7 +18,8 @@ body {
     width: 100%;
 }
 
-#start{
+/* The starting black screen with the dice and number */
+#start {
     position: relative;
     width: 100svw;
     height: 100svh;
@@ -27,7 +28,8 @@ body {
     z-index: 1;
 }
 
-#number{
+/* Centered the number for the dice and its below the dice */
+#number {
     position: absolute;
     color: white;
     transition: ease-in 1s;
@@ -38,7 +40,8 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#dice{
+/* Centers dice gif and lifts it up a bit */
+#dice {
     /* display: none; */
     position: absolute;
     top: 30%;
@@ -48,7 +51,8 @@ body {
     height: 15svh;
 }
 
-.progress{
+/* Keeps the pixel-corners and sticky near the the top*/
+.progress {
     position: absolute;
     top: 30px;
     left: 50%;
@@ -57,41 +61,51 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/* pixel-corners is stuck to the top */
 .pixel-corners {
     width: 100%;
-    /* transition: ease-in-out 1s; */
+    position: relative;
+    top: 0;
     padding: 0.5%;
     background-color: black;
-    clip-path: polygon(
-      0px 8px,
-      4px 8px,
-      4px 4px,
-      8px 4px,
-      8px 0px,
-      calc(100% - 8px) 0px,
-      calc(100% - 8px) 4px,
-      calc(100% - 4px) 4px,
-      calc(100% - 4px) 8px,
-      100% 8px,
-      100% calc(100% - 8px),
-      calc(100% - 4px) calc(100% - 8px),
-      calc(100% - 4px) calc(100% - 4px),
-      calc(100% - 8px) calc(100% - 4px),
-      calc(100% - 8px) 100%,
-      8px 100%,
-      8px calc(100% - 4px),
-      4px calc(100% - 4px),
-      4px calc(100% - 8px),
-      0px calc(100% - 8px)
-    );
-  }
+    /* This is how we did the pixeled corners of the img */
+    clip-path: polygon(0px 8px,
+            4px 8px,
+            4px 4px,
+            8px 4px,
+            8px 0px,
+            calc(100% - 8px) 0px,
+            calc(100% - 8px) 4px,
+            calc(100% - 4px) 4px,
+            calc(100% - 4px) 8px,
+            100% 8px,
+            100% calc(100% - 8px),
+            calc(100% - 4px) calc(100% - 8px),
+            calc(100% - 4px) calc(100% - 4px),
+            calc(100% - 8px) calc(100% - 4px),
+            calc(100% - 8px) 100%,
+            8px 100%,
+            8px calc(100% - 4px),
+            4px calc(100% - 4px),
+            4px calc(100% - 8px),
+            0px calc(100% - 8px));
+}
 
-  .inventory {
+/* Sticky is stuck to pixel-corners and is to the right side of it */
+.sticky {
+    position: relative;
+    bottom: -0.6em;
+    right: -94%;
+    z-index: 2;
+}
+
+/* This is the arrow to the right side of the screen. */
+.inventory {
     position: absolute;
     left: 98%;
     top: 50%;
-  }
+}
 
-  .inventoryNew {
+.inventoryNew {
     left: 90%;
-  }
+}
