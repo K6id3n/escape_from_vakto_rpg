@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background-image: url(back1.png);
+    background-image: url(images/back1.png);
 }
 
 .null{
@@ -194,4 +194,16 @@ body {
 /* Fix this later */
 .option-1 & .option-2 p{
     width: 100%;
+}
+
+/* fighting */
+.fight {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    z-index: 9999;
+}
+
+#fightbar {
+    width: 100dvw;
 }
