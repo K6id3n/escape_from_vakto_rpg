@@ -114,6 +114,7 @@ body {
     /* align-items: center; */
     /* transform: translateX(-150%); */
     transform: translateX(50%);
+    transition: ease-in-out 2s;
 }
 
 /* Shows inventory */
@@ -123,6 +124,7 @@ body {
     left: 90%;
     top: 10%;
     transform: translateX(-23%);
+    transition: ease-in-out 2s;
 }
 
 /* Normal arrow */
@@ -148,7 +150,7 @@ body {
 }
 
 /* Black box on the screen */
-.dialouge {
+.dialogue {
     position: absolute;
     top: 35%;
     left: 50%;
