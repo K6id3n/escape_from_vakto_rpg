@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escape From Valkto</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -31,11 +32,10 @@
     <!-- Arrow to the right of the screen for the inventory -->
     <div class="inventory">
         <img onclick="inv()" src="images/Arrow 1.png" alt="out Arrow">
-        <!-- TEMPORARY FOR DEBUGING -->
-        <button>fight</button>
     </div>
     <!-- fighting mechanic default class = null -->
-    <div class="fight"><img id="fightbar" src="images/damagebar.png" alt="damagebar"></div>
+    <div id="fight" class="fight null">
+    <img id="darr"  src="images/damagearrow.png" alt="damage arrow"></div>
     <!-- This is the grass background for the bottom of the screen-->
     <div>
         <img class="ground" src="images/grass.png" alt="grass">

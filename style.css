@@ -214,12 +214,25 @@ body {
 
 /* fighting */
 .fight {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(images/damagebar.png);
+    background-size: cover;
     position: absolute;
     left: 0;
     top: 60%;
-    z-index: 9999;
+    z-index: 9999;   
+    width: 100dvw;
+    height: 17dvw;
 }
 
-#fightbar {
-    width: 100dvw;
+#darr { 
+    width: 2.5dvw;
+    transition: all 1s;
+}
+
+.move {
+    translate: 98dvw;
+    transition: all 1s linear;
 }
