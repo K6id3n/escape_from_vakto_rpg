@@ -23,4 +23,13 @@ function movearr() {
     
 }
 
+
+
+function inv(){
+    arrow = document.querySelector('.arrow')
+    inventory = document.querySelector('.inventory')
+    arrow.classList.toggle('arrowNew')
+    inventory.classList.toggle('inventoryNew')
+}
+
 sf();
