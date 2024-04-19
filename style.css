@@ -113,7 +113,7 @@ body {
     top: 10%;
     /* align-items: center; */
     /* transform: translateX(50%); */
-    transform: translateX(3.9svw);
+    transform: translateX(7.8svw);
     transition: ease-in-out 2s;
 }
 
@@ -159,6 +159,9 @@ body {
     color: white;
     height: 35svh;
     width: 50svw;
+    /* display: flex;
+    flex-direction: column;
+    flex-shrink: 2; */
     /* Pixeled corners */
     clip-path: polygon(0px 8px,
             4px 8px,
@@ -239,7 +242,7 @@ body {
     line-height: 1.6;
 }
 
-/* Fix this later */
+/* Text for options */
 .divide p {
     width: 100%;
     font-size: 1.5rem;
@@ -269,3 +272,193 @@ body {
     translate: 98dvw;
     transition: all 1s linear;
 }
+/* Mobile large scaleing */
+@media only screen and (max-width: 481px) {
+/* Keeps the pixel-corners and sticky near the the top*/
+.progress {
+    position: absolute;
+    top: 30px;
+    left: 48%;
+    width: 80%;
+    height: 50px;
+    transform: translate(-50%, -50%);
+}
+/* Sticky is stuck to pixel-corners and is to the right side of it */
+.sticky {
+    position: relative;
+    bottom: -0.6em;
+    right: -73%;
+    z-index: 2;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size:25px;
+}
+/* Black box on the screen */
+.dialogue {
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    height: 35svh;
+    width: 50svw;
+    transition: ease 1s;
+    clip-path: polygon(0px 8px,
+            4px 8px,
+            4px 4px,
+            8px 4px,
+            8px 0px,
+            calc(100% - 8px) 0px,
+            calc(100% - 8px) 4px,
+            calc(100% - 4px) 4px,
+            calc(100% - 4px) 8px,
+            100% 8px,
+            100% calc(100% - 8px),
+            calc(100% - 4px) calc(100% - 8px),
+            calc(100% - 4px) calc(100% - 4px),
+            calc(100% - 8px) calc(100% - 4px),
+            calc(100% - 8px) 100%,
+            8px 100%,
+            8px calc(100% - 4px),
+            4px calc(100% - 4px),
+            4px calc(100% - 8px),
+            0px calc(100% - 8px));
+}
+/* Moves the box a litte bit to the left */
+.dialogue-shift{
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    transform: translate(-70%, -50%);
+    background-color: black;
+    color: white;
+    height: 35svh;
+    width: 50svw;
+    transition: ease 1s;
+    clip-path: polygon(0px 8px,
+            4px 8px,
+            4px 4px,
+            8px 4px,
+            8px 0px,
+            calc(100% - 8px) 0px,
+            calc(100% - 8px) 4px,
+            calc(100% - 4px) 4px,
+            calc(100% - 4px) 8px,
+            100% 8px,
+            100% calc(100% - 8px),
+            calc(100% - 4px) calc(100% - 8px),
+            calc(100% - 4px) calc(100% - 4px),
+            calc(100% - 8px) calc(100% - 4px),
+            calc(100% - 8px) 100%,
+            8px 100%,
+            8px calc(100% - 4px),
+            4px calc(100% - 4px),
+            4px calc(100% - 8px),
+            0px calc(100% - 8px));
+}
+.full{
+    height: 100%;
+    line-height: 2;
+    font-size: 0.7rem;
+    margin: 15px;
+}
+.half{
+    height: 60%;
+    line-height: 1.6;
+    font-size: 0.7rem;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: black; 
+}
+/* Wraper for the options to be side by side */
+.divide {
+    height: 20%;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-9%,0%);
+    background-color: black;
+}
+/* top box */
+.option-1 {
+    display: flex;
+    width: 70%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* bottom box */
+.option-2 {
+    display: flex;
+    width: 70%;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    line-height: 1.6;
+}
+/* Text for options */
+.divide p {
+    width: 100%;
+    line-height: 1;
+    /* font-size: 13px; */
+    font-size: 0.7rem;
+    margin: 5px;
+}
+/* Normal arrow */
+.arrow{
+    /* 1.5 down scale */
+    width: 22.6px;
+    height: 40px;
+}
+
+/* Mirrowed arrow */
+.arrowNew{
+    /* 1.5 down scale */
+    width: 22.6px;
+    height: 40px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+/* Fixing the width and height because of box-sizing */
+.inventory-board{
+    width: 70px; /*Aka 100%*/
+    height: 166px; /*Aka 100%*/
+    /* Bigger board size w:160px h:544px (times 4)*/
+    /* Original board size w:40px h:136px */
+}
+.inventory {
+    display: flex;
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    /* align-items: center; */
+    /* transform: translateX(50%); */
+    transform: translateX(3svw);
+    transition: ease-in-out 2s;
+}
+
+/* Shows inventory */
+.inventoryNew {
+    display: flex;
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    transform: translateX(-9svw);
+    transition: ease-in-out 2s;
+}
+  }
