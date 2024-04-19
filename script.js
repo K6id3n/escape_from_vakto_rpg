@@ -7,29 +7,27 @@ function movearr() {
     i = 0;
     var darrElement = document.getElementById("darr");
     darrElement.classList.add("move");
-    setTimeout(function() {
+    setTimeout(function () {
         darrElement.classList.remove("move");
     }, 1000);
-    document.addEventListener("keydown", function(event) {
+    document.addEventListener("keydown", function (event) {
         if (event.key === " ") {
-            console.log("end");
-            clearInterval(movearr); // Clear the interval
-            var style = window.getComputedStyle(document.getElementById("darr"));
-            var property = "left"; // Assuming you want to stop the left translation
-            var currentValue = style.getPropertyValue(property);
-            document.getElementById("darr").style[property] = currentValue; // Stop at the current position
+            setTimeout(function () {
+                darrElement.classList.remove("move");
+                darrElement.style.display = 'none';
+                document.querySelector('.fight').style.backgroundImage = 'none';
+            }, 500);
         }
     });
-    
+
 }
 
 
 
-function inv(){
+function inv() {
     arrow = document.querySelector('.arrow')
     inventory = document.querySelector('.inventory')
     arrow.classList.toggle('arrowNew')
     inventory.classList.toggle('inventoryNew')
 }
 
-sf();

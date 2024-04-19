@@ -109,7 +109,7 @@ body {
 .inventory {
     display: flex;
     position: absolute;
-    left: 90%;
+    left: 94%;
     top: 10%;
     /* align-items: center; */
     /* transform: translateX(50%); */
@@ -124,7 +124,7 @@ body {
     left: 90%;
     top: 10%;
     transform: translateX(0.7svw);
-    transition: ease-in-out 2s;
+    transition: ease-in-out 1s;
 }
 
 /* Normal arrow */
