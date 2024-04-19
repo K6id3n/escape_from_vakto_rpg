@@ -27,7 +27,9 @@ function movearr() {
 function inv() {
     arrow = document.querySelector('.arrow')
     inventory = document.querySelector('.inventory')
+    dialogue = document.querySelector('.dialogue')
     arrow.classList.toggle('arrowNew')
     inventory.classList.toggle('inventoryNew')
+    dialogue.classList.toggle('dialogue-shift')
 }
 
