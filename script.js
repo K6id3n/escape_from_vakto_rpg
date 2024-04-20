@@ -1,35 +1,20 @@
-function sf() {
-    // document.getElementById("fight").classList.toggle("null");
-    setInterval(movearr, 2000);
-}
-
-function movearr() {
-    i = 0;
-    var darrElement = document.getElementById("darr");
-    darrElement.classList.add("move");
-    setTimeout(function () {
-        darrElement.classList.remove("move");
-    }, 1000);
-    document.addEventListener("keydown", function (event) {
-        if (event.key === " ") {
-            setTimeout(function () {
-                darrElement.classList.remove("move");
-                darrElement.style.display = 'none';
-                document.querySelector('.fight').style.backgroundImage = 'none';
-            }, 500);
-        }
-    });
-
-}
-
-
+let open = false;
 
 function inv() {
-    arrow = document.querySelector('.arrow')
-    inventory = document.querySelector('.inventory')
-    dialogue = document.querySelector('.dialogue')
-    arrow.classList.toggle('arrowNew')
-    inventory.classList.toggle('inventoryNew')
-    dialogue.classList.toggle('dialogue-shift')
+    let but = document.querySelector('.invbut');
+    let brd = document.querySelector('.ibrd');
+    let amt;
+    let pos;
+    if (open === false) {
+        amt = 89;
+        open = true;
+        pos = 180;
+    } else {
+        amt = 97;
+        open = false;
+        pos = 0;
+    }
+    but.style.transform = `rotate(${pos}deg)`;
+    but.style.left = amt + "dvw";
+    brd.style.left = (amt + 1) + "dvw";
 }
-

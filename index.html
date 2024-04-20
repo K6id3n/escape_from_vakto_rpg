@@ -11,41 +11,32 @@
 
 <body>
     <!-- Starting screen of dice -->
-    <section id="start null">
+    <section>
         <img id="dice" src="images/dice.gif" alt="dice">
-        <h1 id="number"></h1>
+        <h1 id="num"></h1>
     </section>
     <!-- This is the progress bar -->
-    <div class="progress">
-        <h1 class="sticky">0%</h1>
-        <img class="progress pixel-corners" src="images/progress/Progress0-10.png" alt="progress">
+    <div class="pro">
+         
     </div>
     <!-- black text box for the dialogue and text options -->
-    <section class="dialogue">
-        <!-- Just need to change this p with half or full -->
-        <p class="full half">Lorem ips um dolor sit amet consectetur adipisicing elit. Ipsam ea, minus similique placeat delectus numquam iste ducimus perspiciatis sequi, accusantium rem. Nulla saepe voluptate assumenda illum illo nihil repellendus voluptatibus.</p>
-        <section class="divide">
-            <div class="option-1"><p>Tell me what programmes need to be restarted.</p></div>
-            <div class="option-2"><p>Hello your choices are to fie or</p></div> 
+    <section class="dia pix">
+        <p id="prompt">this is the prompt: you enter a strange room and see two men</p>
+        <section>
+            <button id="op2" onclick=""><p>Tell me what programmes need to be restarted.</p></button>
+            <button id="op2" onclick=""><p>Hello your choices are to fie or</p></button> 
         </section>
     </section>
     <!-- Arrow to the right of the screen for the inventory -->
-    <div class="inventory">
-        <img class="arrow" onclick="inv()" src="images/Arrow 1.png" alt="out Arrow">
-        <!-- Hidden board -->
-        <img class="inventory-board" src="images/invimg/bigger-board-bg-removed.png" alt="inventory">
-        <!-- "List" container for aligning the items -->
-        <div class="inventory-container">
-            <!-- Add images here with class="inventory-list"-->
-        </div>
-    </div>
+        <img class="invbut" onclick="inv()" src="images/Arrow 1.png" alt="out Arrow">
+        <img class="ibrd" src="images/invimg/bigger-board-bg-removed.png" alt="inventory">
     <!-- fighting mechanic default class = null -->
-    <div class="fight null">
+    <!-- <div class="fight null">
         <img id="darr" src="images/damagearrow.png" alt="arrow">
-    </div>
+    </div> -->
     <!-- This is the grass background for the bottom of the screen-->
     <div>
-        <imgclass="ground" src="images/grass.png" alt="grass">
+        <img class="grd" src="images/grass.png" alt="grass">
     </div>
 </body>
 
