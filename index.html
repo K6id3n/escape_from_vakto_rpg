@@ -17,19 +17,61 @@
     </section>
     <!-- This is the progress bar -->
     <div class="pro">
-         
+
     </div>
+    <button class="srt pix" onclick="start(0)">start!</button>
+    <section class="lvl pix" style="display: none;">
+        <button class="pix lvl0" onclick="start(1, true)">
+            Level 1
+        </button>
+        <button class="pix lvl1" onclick="start(2, true)">
+            Level 2
+        </button>
+        <button class="pix lvl2" onclick="start(3, true)">
+            Level 3
+        </button>
+        <button class="pix lvl3" onclick="start(4, true)">
+            Level 4
+        </button>
+        <button class="pix lvl4" onclick="start(5, true)">
+            Level 5
+        </button>
+    </section>
     <!-- black text box for the dialogue and text options -->
-    <section class="dia pix">
-        <p id="prompt">this is the prompt: you enter a strange room and see two men</p>
+    <section class="dia pix" style="display: none;">
+        <p id="prompt"></p>
         <section>
-            <button id="op2" onclick=""><p>Tell me what programmes need to be restarted.</p></button>
-            <button id="op2" onclick=""><p>Hello your choices are to fie or</p></button> 
+            <button id="op1" class="pix" onclick="cardScene('left')">
+                <p></p>
+            </button>
+            <button id="op2" class="pix" onclick="cardScene('right')">
+                <p></p>
+            </button>
         </section>
     </section>
     <!-- Arrow to the right of the screen for the inventory -->
-        <img class="invbut" onclick="inv()" src="images/Arrow 1.png" alt="out Arrow">
-        <img class="ibrd" src="images/invimg/bigger-board-bg-removed.png" alt="inventory">
+    <img style="display: none;" class="invbut" onclick="inv()" src="images/Arrow 1.png" alt="out Arrow">
+    <img style="display: none;" class="ibrd" src="images/invimg/bigger-board-bg-removed.png" alt="inventory">
+    <section class="inv">
+        <div onclick="inv(true, 1)">
+            <!-- item -->
+        </div>
+        <div onclick="inv(true, 2)">
+            <!-- item -->
+        </div>
+        <div onclick="inv(true, 3)">
+            <!-- item -->
+        </div>
+        <div onclick="inv(true, 4)">
+            <!-- item -->
+        </div>
+        <div onclick="inv(true, 5)">
+            <!-- item -->
+        </div>
+        <div onclick="inv(true, 6)">
+            <!-- item -->
+        </div>
+    </section>
     <!-- fighting mechanic default class = null -->
     <!-- <div class="fight null">
         <img id="darr" src="images/damagearrow.png" alt="arrow">
