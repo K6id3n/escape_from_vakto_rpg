@@ -128,24 +128,23 @@ class Cards {
     }
 }
 
-const testCard0 = new Cards("test card 0", '0.1', ' ', false)
-const testCard0A = new Cards("test card 0A", '0.3', ' ', false)
-const testCard0B = new Cards("test card 0B", '0.0', ' ', false)
-const testCard1 = new Cards("test card 1", '0.2', ' ', false)
-const testCard1A = new Cards("test card 1A", '0.4', ' ', false)
-const testCard1B = new Cards("test card 1B", '0.0', ' ', false)
+// const testCard0 = new Cards("test card 0", '0.1', ' ', false)
+// const testCard0A = new Cards("test card 0A", '0.3', ' ', false)
+// const testCard0B = new Cards("test card 0B", '0.0', ' ', false)
+// const testCard1 = new Cards("test card 1", '0.2', ' ', false)
+// const testCard1A = new Cards("test card 1A", '0.4', ' ', false)
+// const testCard1B = new Cards("test card 1B", '0.0', ' ', false)
 
-const dialogue0 = new Cards("next", 'death', 'ur a idiot', true);
-const dialogue1 = new Cards("next", 'death', 'ur a idiot', true);
+// const dialogue0 = new Cards("next", 'death', 'ur a idiot', true);
+// const dialogue1 = new Cards("next", 'death', 'ur a idiot', true);
 
 // needs to be filled out with game PRIORITY
+const toS2 = new Cards("next", '0.1', ' ', true)
+
 let game = [
     [
-        ["choose one card", testCard0, testCard1],
-        ["this is text card zero", testCard0A, testCard0B],
-        ["this is text card one", testCard1A, testCard1B],
-        ["this is diolouge zero", dialogue0],
-        ["this is diolouge one", dialogue1]
+        ["Beginning your journey to finding the other four pieces of the recon beacon, you begin hiking through the forest.", toS2],
+
     ],
     [[]],
     [[]],
@@ -160,20 +159,11 @@ function cardScene(scene) {
     let but1 = document.getElementById('op1');
         let but2 = document.getElementById('op2');
     but2.style.display = 'block';
-    if (!(dm = ' ')) {
-        death(dm);
-    }
     if (scene == 'left') {
         let pth = game[lpath[0]][lpath[2]];
-        console.log(pth)
-        console.log(pth.dm)
-        dm = pth.dm;
         cardScene(pth);
     } else if (scene == 'right') {
         let pth = (game[rpath[0]][rpath[2]]);
-        console.log(pth)
-        console.log(pth.dm)
-        dm = pth.dm;
         cardScene(pth);
     } else {
         if (scene[1].dia) {
