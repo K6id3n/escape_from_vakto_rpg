@@ -16,8 +16,8 @@
         <h1 id="num"></h1>
     </section>
     <!-- This is the progress bar -->
-    <div class="pro">
-
+    <div class="pro pix">
+        <canvas id="pro" class="pix" ></canvas>
     </div>
     <button class="srt pix" onclick="start(0)">start!</button>
     <section class="lvl pix" style="display: none;">
@@ -55,28 +55,81 @@
     <section class="inv">
         <div onclick="inv(true, 1)">
             <!-- item -->
+            <img src="images/invimg/placeholder.png" alt="">
         </div>
         <div onclick="inv(true, 2)">
             <!-- item -->
+            <img src="images/invimg/placeholder.png" alt="">
         </div>
         <div onclick="inv(true, 3)">
             <!-- item -->
+            <img src="images/invimg/placeholder.png" alt="">
         </div>
         <div onclick="inv(true, 4)">
             <!-- item -->
+            <img src="images/invimg/placeholder.png" alt="">
         </div>
         <div onclick="inv(true, 5)">
             <!-- item -->
+            <img src="images/invimg/placeholder.png" alt="">
         </div>
         <div onclick="inv(true, 6)">
             <!-- item -->
+            <img src="images/invimg/placeholder.png" alt="">
         </div>
     </section>
-    <!-- fighting mechanic default class = null -->
-    <!-- <div class="fight null">
-        <img id="darr" src="images/damagearrow.png" alt="arrow">
-    </div> -->
-    <!-- This is the grass background for the bottom of the screen-->
+    <section class="dmg">
+        <img class="bar" src="images/damagebar.png" alt="damage guage">
+        <img class="arr" src="images/damagearrow.png" alt="damage selector">
+    </section>
+    <section class="dthscn">
+        <p>you died!</p>
+        <p id="dm"></p>
+        <button class="dthbut pix">Restart</button>
+    </section>
+    <section class="health pix"><canvas id="hth" class="pix"></canvas></section>
+    <section class="cr">
+        <div class="wrow">
+            <img src="images/wires/connector.png" alt="wire" id="w1" onclick="rotate('w1', 0)">
+            <img src="images/wires/connector.png" alt="wire" id="w2" onclick="rotate('w2', 1)">
+            <img src="images/wires/wire2.png" alt="wire" id="w3" onclick="rotate('w3', 2)">
+            <img src="images/wires/connector.png" alt="wire" id="w4" onclick="rotate('w4', 3)">
+            <img src="images/wires/connector.png" alt="wire" id="w5" onclick="rotate('w5', 4)">
+        </div>
+
+        <div class="wrow">
+            <img src="images/wires/wire1.png" alt="wire" id="w6" onclick="rotate('w6', 5)">
+            <img src="images/wires/connector.png" alt="wire" id="w7" onclick="rotate('w7', 6)">
+            <img src="images/wires/wire3.png" alt="wire" id="w8" onclick="rotate('w8', 7)">
+            <img src="images/wires/wire2.png" alt="wire" id="w9" onclick="rotate('w9', 8)">
+            <img src="images/wires/wire1.png" alt="wire" id="w10" onclick="rotate('w10', 9)">
+        </div>
+
+        <div class="wrow">
+            <img src="images/wires/wire1.png" alt="wirw" id="w11" onclick="rotate('w11', 10)">
+            <img src="images/wires/wire2.png" alt="wirw" id="w12" onclick="rotate('w12', 11)">
+            <img src="images/wires/origin.png" alt="wirw" id="w13" onclick="rotate('w13', 12)">
+            <img src="images/wires/wire3.png" alt="wirw" id="w14" onclick="rotate('w14', 13)">
+            <img src="images/wires/wire2.png" alt="wirw" id="w15" onclick="rotate('w15', 14)">
+        </div>
+
+        <div class="wrow">
+            <img src="images/wires/wire2.png" alt="wirw" id="w16" onclick="rotate('w16', 15)">
+            <img src="images/wires/wire3.png" alt="wirw" id="w17" onclick="rotate('w17', 16)">
+            <img src="images/wires/wire3.png" alt="wirw" id="w18" onclick="rotate('w18', 17)">
+            <img src="images/wires/wire2.png" alt="wirw" id="w19" onclick="rotate('w19', 18)">
+            <img src="images/wires/wire2.png" alt="wirw" id="w20" onclick="rotate('w20', 19)">
+        </div>
+
+        <div class="wrow">
+            <img src="images/wires/connector.png" alt="wirw" id="w21" onclick="rotate('w21', 20)">
+            <img src="images/wires/wire2.png" alt="wirw" id="w22" onclick="rotate('w22', 21)">
+            <img src="images/wires/connector.png" alt="wirw" id="w23" onclick="rotate('w23', 22)">
+            <img src="images/wires/connector.png" alt="wirw" id="w24" onclick="rotate('w24', 23)">
+            <img src="images/wires/wire2.png" alt="wirw" id="w25" onclick="rotate('w25', 24)">
+        </div>
+
+    </section>
     <div>
         <img class="grd" src="images/grass.png" alt="grass">
     </div>

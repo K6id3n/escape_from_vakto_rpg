@@ -36,9 +36,48 @@ body {
     /* default^ */
 }
 
+.dthscn {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgb(255, 0, 0, 0.3);
+    z-index: 999999;
+    color: white;
+    font-size: 4dvw;
+}
+
+.dthbut {
+    width: 10dvw;
+    height: 2dvw;
+    font-size: 1dvw;
+    color: white;
+    background-color: black;
+}
+
 /* misc^ */
 
 /* body */
+
+.pro {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 15dvw;
+    width: 70dvw;
+    height: 4dvh;
+    background-color: black;
+}
+
+.pro canvas {
+    width: 68dvw;
+    height: 2dvh;
+    background-color: white;
+}
 
 .srt{
     position: absolute;
@@ -123,9 +162,10 @@ body {
 
 .invbut {
     position: absolute;
-    top: 40%;
+    top: 45%;
+    left: 98dvw;
     transform: translateY(-50%);
-    left: 97dvw;
+    translate: 0px -2.5dvw;
     height: 4dvw;    
     z-index: 999;
     transition: all 1s;    
@@ -163,8 +203,66 @@ body {
     height: 3.4dvw;
     background-color: rgba(0, 0, 0, 0.1);
 }
+.inv div img {
+    width: 3.4dvw;
+    height: 3.4dvw;
+}
+.health {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 15dvw;
+    top: 95%;
+    width: 70dvw;
+    height: 4dvh;
+    background-color: black;
+    z-index: 999;
+}
 
+.health  canvas {
+    width: 68dvw;
+    height: 2dvh;
+    background-color: white;
+}
+.cr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99999;
+}
 
+.cr .wrow {
+    display: flex;
+}
+
+.dmg {
+    display: none;
+    z-index: 9999;
+}
+
+.dmg .arr {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    width: 2.4dvw;
+    top: 52%;
+    transform: translate(-50%, -70%);
+    transition: all 1s linear;
+}
+
+.dmg .bar {
+    position: absolute;
+    top: 50%;
+    width: 100dvw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
 
 .grd {
     position: absolute;
