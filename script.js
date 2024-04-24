@@ -139,12 +139,19 @@ class Cards {
 // const dialogue1 = new Cards("next", 'death', 'ur a idiot', true);
 
 // needs to be filled out with game PRIORITY
-const toS2 = new Cards("next", '0.1', ' ', true)
+// const fight
+const next1 = new Cards("Next", '0.1', ' ', true)
+const run2 = new Cards("Run!", '0.2', ' ', false)
+const fight2 = new Cards("Fight!", '0.3', ' ', false)
+const deaths3 = new Cards("death", null, 'The zerg catches up to you with its fast adaptive legs and consumes you and your team.', false)
+
 
 let game = [
     [
-        ["Beginning your journey to finding the other four pieces of the recon beacon, you begin hiking through the forest.", toS2],
-
+        ["Beginning your journey to finding the other four pieces of the recon beacon, you begin hiking through the forest.", next1],
+        ["You encounter a wolf-like figure with its fur looking hard and rigid with black stone color to it.", run2, fight2],
+        ['death', deaths3],
+        ['fightscene', 1]
     ],
     [[]],
     [[]],
@@ -155,27 +162,44 @@ let game = [
 let dm;
 let lpath;
 let rpath;
-function cardScene(scene) {        
+function cardScene(scene) {
+    console.log('card load')
+    console.log(scene)
+    if (scene[0] == 'death') {
+        console.log("you died");
+        death(scene[1].dm);
+        return; 
+    }
+    console.log("continue")
+    if (scene[0] == 'fightscene') {
+        console.log("fight")
+        fightActive(scene[1])
+      return;
+    }
     let but1 = document.getElementById('op1');
-        let but2 = document.getElementById('op2');
+    let but2 = document.getElementById('op2');
     but2.style.display = 'block';
     if (scene == 'left') {
-        let pth = game[lpath[0]][lpath[2]];
+        let pth = game[lpath[0]][lpath[2]];        
+        console.log("right: " + pth)
         cardScene(pth);
     } else if (scene == 'right') {
-        let pth = (game[rpath[0]][rpath[2]]);
+        let pth = (game[rpath[0]][rpath[2]]);        
+        console.log("right: " + pth)
         cardScene(pth);
     } else {
         if (scene[1].dia) {
             but2.style.display = 'none';
         } else {
-            but2.innerHTML = scene[2].text;     
+            but2.innerHTML = scene[2].text;
             rpath = scene[2].path
         }
         document.getElementById('prompt').innerHTML = scene[0];
         but1.innerHTML = scene[1].text;
-        lpath = scene[1].path  
+        lpath = scene[1].path
+        console.log("left :" + lpath + "right :" + rpath)
     }
+    console.log("---------------------------------------------------------------------------")
 }
 
 document.addEventListener('keydown', function (event) {
@@ -194,10 +218,10 @@ function puz() {
 }
 
 let stored = [
-    0, 0, 0, 0, 0, 
-    0, 0, 0, 0, 0, 
-    0, 0, 0, 0, 0, 
-    0, 0, 0, 0, 0, 
+    0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0,
     0, 0, 0, 0, 0
 ];
 
@@ -250,19 +274,29 @@ function probar(numSections) {
 }
 
 function fight() {
+    console.log("fighting...")
     document.querySelector('.dia').style.display = 'none';
     document.querySelector('.invbut').style.display = 'none';
     let arr = document.querySelector('.arr');
     arr.style.display = 'block';
     document.querySelector('.dmg').style.display = 'block';
-    setInterval(mvArr, 1000);
 
+    setTimeout(function() {
+        mvArr();
+    setInterval(mvArr, 1000);     
+    }, 1)
+
+}
+
+function fightActive(enemy) {
+    console.log(enemy)
 }
 
 let going = true;
 let posX = 0;
 
 function mvArr() {
+    console.log("fight bar active")
     let arr = document.querySelector('.arr');
     if (going) {
         posX += 99;
