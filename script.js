@@ -147,17 +147,108 @@ const deaths3 = new Cards("death", null, 'The zerg catches up to you with its fa
 
 
 let game = [
+    // mission 1
     [
         ["Beginning your journey to finding the other four pieces of the recon beacon, you begin hiking through the forest.", next1],
         ["You encounter a wolf-like figure with its fur looking hard and rigid with black stone color to it.", run2, fight2],
         ['death', deaths3],
         ['fightscene', 1]
     ],
+    // mission 2
     [[]],
+    // mission 3
     [[]],
+    // mission 4
     [[]],
+    // mission 5
     [[]],
 ];
+
+// First is the dialogue, second is the row (starts at 0 and the next number is the card in figma 10 is 0.10), third is death message, fourth is false:dialogue True:dialogue
+// This is for 6 (advert the crisis)
+const next6Dot1 = new Cards("Next", '2.1', '', false)
+const next6Dot2 = new Cards("death", null, 'You continue your everyday job on the space craft')
+
+// This is for 4-5 (Dan)
+const next4Dot1 = new Cards("Next", '1.1', '', true)
+const next4Dot2 = new Cards("Next", '1.2', '', true)
+const next4Dot3 = new Cards("Next", '1.3', '', true)
+// const option4Dot1 = new Cards("You choose to stay put and survive.", '1.')
+// This is the on card 4 option 1 and it leads to a death card
+
+// This is for 1-3 (soldier)
+const next1Dot1 = new Cards("Next", '0.1', '', true)
+const
+
+let background = [
+    // 1-3 Soldier(Neo) 43 CARDS
+    [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        // End of first ship (26) | Dan needs to jump on 27 and onwards
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    // 4-5 Dan 13 CARDS
+    [
+        ["You are one of the many... zoologists with the duty to travel on the space craft and record, observe, and advise the crew while the space craft guards the Mothership.", next4Dot1],
+        ["The ships around the Mothership gets surprised attacked by zergs. The space craft your on happens to be closest to the start of the Zerg's attack, having the space craft your on to crash land on the planet Vakto.", next4Dot2],
+        ["You wake up with ringing ears, and blurry vision. As time passes your hearing and vision get clearer, allowing you to see that the ship is badly damaged with wires sticking out the steel wall and you could hear a faint sound of crackling fire. You also see blood stains on the floor and walls.", next4Dot3],
+        ["You know before the crash you were in the cafeteria with a couple other researchers, but you just see corpses.", ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    // 6 Advert the crisis 2 CARDS
+    [["The ships around the Mothership gets surprised attacked by zergs. Luckily the space craft that you are on was able to make an evasive movement and retreat back to the safety of the Mothership.", next6Dot1],
+    // ["death", next6Dot2]
+    ]
+]
 
 let dm;
 let lpath;
