@@ -8,6 +8,19 @@ body {
     overflow: hidden;
 }
 
+#hit {
+    transition: all .1s ease
+}
+
+.redscn {
+    position: absolute;
+    z-index: 99999999;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba(255, 0, 0, 0.516);
+    transition: all .1s ease
+}
+
 .pix {
     clip-path: polygon(0px 8px,
             4px 8px,
@@ -61,6 +74,13 @@ body {
     font-size: 1dvw;
     color: white;
     background-color: black;
+}
+
+.en {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* misc^ */
@@ -253,10 +273,10 @@ body {
 .dmg .arr {
     position: absolute;
     left: 0%;
-    top: 50%;
+    top: 70%;
     width: 2.4dvw;
     top: 52%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, 15%);
     transition: all 1s linear;
 }
 
@@ -266,7 +286,7 @@ body {
     width: 100dvw;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, 0%);
 }
 
 .grd {
@@ -276,6 +296,18 @@ body {
     width: 100%;
     user-select: none;
     z-index: 1;
+}
+
+.fut {
+    background-color: black;
+    color: white;
+    font-size: 3dvw;
+    width: 30dvw;
+    height:7dvw;    
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, 15%);
 }
 
 @media (max-width: 900px) {

@@ -26,7 +26,7 @@ function start(lvl, levs) {
         document.querySelector('.invbut').style.display = 'block';
         document.querySelector('.ibrd').style.display = 'block';
         document.querySelector('.inv').style.display = 'flex';
-        document.querySelector('.health').style.display = 'flex';
+        // document.querySelector('.health').style.display = 'flex';
         inv()
         inv()
     }
@@ -168,23 +168,23 @@ function cardScene(scene) {
     if (scene[0] == 'death') {
         console.log("you died");
         death(scene[1].dm);
-        return; 
+        return;
     }
     console.log("continue")
     if (scene[0] == 'fightscene') {
         console.log("fight")
         fightActive(scene[1])
-      return;
+        return;
     }
     let but1 = document.getElementById('op1');
     let but2 = document.getElementById('op2');
     but2.style.display = 'block';
     if (scene == 'left') {
-        let pth = game[lpath[0]][lpath[2]];        
+        let pth = game[lpath[0]][lpath[2]];
         console.log("right: " + pth)
         cardScene(pth);
     } else if (scene == 'right') {
-        let pth = (game[rpath[0]][rpath[2]]);        
+        let pth = (game[rpath[0]][rpath[2]]);
         console.log("right: " + pth)
         cardScene(pth);
     } else {
@@ -274,46 +274,49 @@ function probar(numSections) {
 }
 
 // fighting------------------------------------------------------------------------------------------------------
-
+let mvArrInt;
 function fight() {
+    document.querySelector('.fut').style.display = 'none';
     console.log("fighting...")
-    document.querySelector('.dia').style.display = 'none';
-    document.querySelector('.invbut').style.display = 'none';
     let arr = document.querySelector('.arr');
     arr.style.display = 'block';
     document.querySelector('.dmg').style.display = 'block';
-
-    setTimeout(function() {
-        mvArr();
-    setInterval(mvArr, 1000);     
-    }, 1)
-
+    mvArr();
+    mvArrInt = setInterval(function () {
+        console.log("fight bar active")
+        let arr = document.querySelector('.arr');
+        if (going) {
+            posX += 99;
+            arr.style.left = posX + '%';
+            going = false;
+        } else {
+            posX -= 99;
+            arr.style.left = posX + '%';
+            going = true;
+        }
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'f' || event.key === 'F') {
+                return fightEnd();
+            }
+        });
+    }, 1000);
 }
 
+let enHealth = 100;
+let phealth = 100;
+
 function fightActive(enemy) {
-    document.getElementById("en" + enemy).style.display = 'block';
+    document.querySelector(".en" + enemy).style.display = 'block';
+    document.querySelector('.dia').style.display = 'none';
+    document.querySelector('.invbut').style.display = 'none';
+    fight()
 }
 
 let going = true;
 let posX = 0;
 
 function mvArr() {
-    console.log("fight bar active")
-    let arr = document.querySelector('.arr');
-    if (going) {
-        posX += 99;
-        arr.style.left = posX + '%';
-        going = false;
-    } else {
-        posX -= 99;
-        arr.style.left = posX + '%';
-        going = true;
-    }
-    document.addEventListener('keydown', function (event) {
-        if (event.key === 'r') {
-            return fightEnd();
-        }
-    });
+
 }
 
 let fend = 0;
@@ -326,11 +329,37 @@ function fightEnd() {
         // output
         console.log('Left:', Math.round(rect.left / (window.innerWidth / 100)));
 
-        document.querySelector('.dia').style.display = 'flex';
-        document.querySelector('.invbut').style.display = 'flex';
+        // document.querySelector('.dia').style.display = 'flex';
+        // document.querySelector('.invbut').style.display = 'flex';
         document.querySelector('.dmg').style.display = 'none';
         fend += 1;
+        enHealth -= Math.floor(100 - (window.innerWidth / 100));
+        console.log("enemyy health: " + enHealth)
+        phealth -= 5;
+        console.log("player health: " + phealth);
+        clearInterval(mvArrInt);
+        if (phealth <= 0) {
+            death("ur bad")
+        }
+        if (enHealth > 0) {
+            console.log("display but")
+            document.querySelector('.fut').style.display = 'block';
+
+            document.getElementById('hit').classList.toggle('redscn');
+            setTimeout(function () {
+                document.getElementById('hit').classList.toggle('redscn');
+            }, 100)
+        } else {
+            for (i = 1; i < 6; i++) {
+                if (document.getElementById("en" + i) != null) {
+                    console.log("exist      ")
+                }    
+            }
+        }
+
+
     }
+
     setTimeout(function () {
         fend = 0;
     }, 10000)
