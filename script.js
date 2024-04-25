@@ -273,6 +273,8 @@ function probar(numSections) {
     }
 }
 
+// fighting------------------------------------------------------------------------------------------------------
+
 function fight() {
     console.log("fighting...")
     document.querySelector('.dia').style.display = 'none';
@@ -289,7 +291,7 @@ function fight() {
 }
 
 function fightActive(enemy) {
-    console.log(enemy)
+    document.getElementById("en" + enemy).style.display = 'block';
 }
 
 let going = true;
