@@ -273,7 +273,7 @@ function probar(numSections) {
     }
 }
 
-// fighting------------------------------------------------------------------------------------------------------
+// fighting------------------------------------------------------------------------------------------------------ isaac was here you stinky boy
 let mvArrInt;
 function fight() {
     document.querySelector('.fut').style.display = 'none';
