@@ -144,6 +144,20 @@ const next1 = new Cards("Next", '0.1', ' ', true)
 const run2 = new Cards("Run!", '0.2', ' ', false)
 const fight3 = new Cards("Fight!", '0.3', ' ', false)
 const deaths2 = new Cards("death", null, 'The zerg catches up to you with its fast adaptive legs and consumes you and your team.', false)
+const deaths13 = new Cards("death", null, 'Fleeing this early in the game... Shame on you.', false)
+
+// mission 1 options:(will tell you where it goes on click)
+// 3: *fight is done* ->(4)
+// 4: Next (5)
+// 5: Inspect the box (circuts->ammo / 6) | Continue walking (6)
+// 6: Run! (deaths13) | Fight! (deaths13 / 7)
+// 7: Continue walking (8) | Search for more (7 ->limit once)
+// 8: Run! (deaths13) | Fight! (9)
+// 9: Next (9)
+// 10: Shoot them from a distance. (fight? / 11) | run up with your melee weapon and try to defeat them all at once. (deaths13)
+// 11: Next (12)
+// 12: (get second piece) Next (goes to mission page)
+
 
 // mission 2:
 const M2next1 = new Cards("Next", '1.1', ' ', true)
@@ -199,6 +213,9 @@ let game = [
         // Add second piece
         ["You find the mechanic hiding from the zergs", ],
         // Goes to missions page
+        // deaths will go here
+        // 13
+        ["death", deaths13],
     ],
     // mission 2
     [
