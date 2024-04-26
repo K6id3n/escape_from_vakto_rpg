@@ -179,76 +179,77 @@
 // const next1Dot1 = new Cards("Next", '0.1', '', true)
 // const
 
-// let background = [
-//     // 1-3 Soldier(Neo) 43 CARDS
-//     [
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         // End of first ship (26) | Dan needs to jump on 27 and onwards
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         []
-//     ],
-//     // 4-5 Dan 13 CARDS
-//     [
-//         ["You are one of the many... zoologists with the duty to travel on the space craft and record, observe, and advise the crew while the space craft guards the Mothership.", next4Dot1],
-//         ["The ships around the Mothership gets surprised attacked by zergs. The space craft your on happens to be closest to the start of the Zerg's attack, having the space craft your on to crash land on the planet Vakto.", next4Dot2],
-//         ["You wake up with ringing ears, and blurry vision. As time passes your hearing and vision get clearer, allowing you to see that the ship is badly damaged with wires sticking out the steel wall and you could hear a faint sound of crackling fire. You also see blood stains on the floor and walls.", next4Dot3],
-//         ["You know before the crash you were in the cafeteria with a couple other researchers, but you just see corpses.", ],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         [],
-//         []
-//     ],
-//     // 6 Advert the crisis 2 CARDS
-//     [["The ships around the Mothership gets surprised attacked by zergs. Luckily the space craft that you are on was able to make an evasive movement and retreat back to the safety of the Mothership.", next6Dot1],
-//     // ["death", next6Dot2]
-//     ]
-// ]
-
+let background = [
+    // 1-3 Soldier(Neo) 43 CARDS
+    [
+        ["You are one of the many soldiers with the duty of patrolling the space craft protecting the Mothership.", ],
+        ["The ships around the Mothership gets surprised attacked by zergs. The space craft your on happens to be closest to the start of the Zerg's attack, having the space craft your on to crash land on the planet Vakto.", ],
+        ["You wake up with ringing ears, and blurry vision. As time passes your hearing and vision get clearer, allowing you to see that the ship is badly damaged with wires sticking out the steel wall and you could hear a faint sound of crackling fire. You also see blood stains on the floor and walls.", ],
+        ["You know before the crash you were in the lounge room with a couple other people, but you just see corpses.", ],
+        ["You choose to leave the lounge room.", ],
+        ["Make your way to the command room", ],
+        ["As you push open the command room's door you see the commander John dead in his chair.", ],
+        ["It looks like when the ship crashed, a broken fragment of the ship's wall was lodged into his body.", ],
+        ["As you touch the control panel, the screen glitches and makes a crackling sound. The image eventually forms into a figure in the corner of the screen. You recognize the shape as Eve, the ship's A.I.", ],
+        ['There is a pause and then Eve says, "Communication has been cut off because of the damage the ship has received. I would recommend restarting and minimal repair to the communication system for planetary communication.', ],
+        ["Eve: The ship has sustained heavy damage with the crash and needs to restart a series of programs to better help the survivors", ],
+        ["Eve: I will give you a list of programs I have deemed most important to least important.", ],
+        ['1.The emergency power system 2. The life detector system 3. The defense system 4. The communication system', ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        // End of first ship (26) | Dan needs to jump on 27 and onwards
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    // 4-5 Dan 13 CARDS
+    [
+        ["You are one of the many... zoologists with the duty to travel on the space craft and record, observe, and advise the crew while the space craft guards the Mothership.", next4Dot1],
+        ["The ships around the Mothership gets surprised attacked by zergs. The space craft your on happens to be closest to the start of the Zerg's attack, having the space craft your on to crash land on the planet Vakto.", next4Dot2],
+        ["You wake up with ringing ears, and blurry vision. As time passes your hearing and vision get clearer, allowing you to see that the ship is badly damaged with wires sticking out the steel wall and you could hear a faint sound of crackling fire. You also see blood stains on the floor and walls.", next4Dot3],
+        // Under I did not link any cards
+        ["You know before the crash you were in the cafeteria with a couple other researchers, but you just see corpses.", ],
+        ["You choose to leave the cafeteria.", ],
+        ["Arriving in the power room you see five red switches on each of the walls in the pentagon room.", ],
+        ["Flipping the switches up and down, the emergency power restarts.", ],
+        ["You decide to go to the command room to assume command of the ship or follow command from someone, more suited to command any survivors.", ],
+        ["Arriving into the command room, you find another survivor, Neo, one of the soldiers on the ship.", ],
+        ["Eve the AI on the ship gives a brief report of what has happen so far.", ],
+        ["You decide to go with Neo and follow his lead...", ],
+        ["You are Neo the soldier", ],
+        ["Following the coordinates Eve gave you. You see in the distance broken and crushed trees following a trajectory leading to the other half of the broken ship.", ]
+        // goes to 27 on soldier(1)
+    ],
+    // 6 Advert the crisis 2 CARDS
+    [["The ships around the Mothership gets surprised attacked by zergs. Luckily the space craft that you are on was able to make an evasive movement and retreat back to the safety of the Mothership.", next6Dot1],
+    // ["death", next6Dot2]
+    ]
+]
 // let dm;
 // let lpath;
 // let rpath;
