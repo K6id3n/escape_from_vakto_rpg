@@ -152,15 +152,145 @@ let game = [
         ["You encounter a wolf-like figure with its fur looking hard and rigid with black stone color to it.", run2, fight2],
         ['death', deaths3],
         ['fightscene', 1]
+        ["Dan inspects the zerg and finds out multiple things about them:Zergs in nature are very adaptive with their surroundings and with that they have a flaw where the zergs will have at least one weakness.", ]
+        ["While walking through the forest you encounter a box.", ],
+        ["You encounter another zerg, this one looks to be a younger version of the wolf zerg and its thick fur looks like it can be penetrated by bullets. Rather than having to aim for the wolf zerg’s weakness.", ],
+        ["You get some ammo and a few medkits.", ],
+        ["You encounter another zerg, this one looks to be a younger version of the wolf zerg and its thick fur looks like it can be penetrated by bullets. Rather than having to aim for the wolf zerg’s weakness.", ],
+        ["Thanks to the spare ammo you found in the box, you were able to kill the zerg with a lucky shot under its mouth.", ],
+        ["Looking down at the tracker it says the second piece should be visible. With a quick look, you spot the piece! But it's guarded by multiple wolf zergs because they seem like they are searching for something around the second piece.", ],
+        ["Thanks to the spare ammo you found in the box, you were able to kill the zerg with a lucky shot under its mouth.", ],
+        // Add second piece
+        ["You find the mechanic hiding from the zergs", ],
+        // Goes to missions page
     ],
     // mission 2
-    [[]],
+    [
+        ["Following the tracker, you travel a similar route when you first set off on your adventure, but this time your crew goes past the forest and finds a small cave entrance.", ],
+        ["You encounter a group of smaller zergs that resemble bats. These bat-like creatures emit a low white glow from their wings. Sweeping over them with your flashlight, the bat zergs do not react. With this information you assume just like bats they are blind, but have incredible hearing. With their hearing the bat zergs start to twitch.", ],
+        ["Chose your weapon!", ],
+        ["You swiftly kill the zergs with a few blows because they can’t hear where you are.", ],
+        ["You encounter a large rock that needs to be moved for you to get past.", ],
+        [" With the help of your team you guys are able to get the rock out of the way. A few moments later a bigger version of the bat zergs comes flying at you.", ],
+        ["You get knocked on the floor.", ],
+        ["Hitting its head, the shot disorients the zerg and now you have a chance to draw your sword and strike.", ],
+        ["The zerg misses you and hits its head on the wall, making it wobble in the air.", ],
+        ["You hit the zerg and kill with one strike.", ],
+        ["You come across a room containing a large collection of bat zergs that look to be in their infancy. Along with the bat zergs you find the third piece.", ],
+        ["You quickly slice them and the older bat zergs barely notice your actions because of how quiet your sword is.", ],
+        // Add third piece
+        ["You find the third piece and put it into the frame with Omar's help.", ],
+        // Go to missions page
+    ],
     // mission 3
-    [[]],
+    [
+        ["Setting off to find the piece located at the lake, you head off in that direction.", ],
+        ["Arriving at the lake, you see a miniature land mass in the middle of the lake. The tracker indicates that the third piece is further in.", ],
+        ["We should build a raft", ],
+        ["With your best effort you miraculously build a sturdy looking raft.", ],
+        ["Using the raft you make it halfway to the land mass in the center of the lake, before the sturdy looking raft snaps in half.", ],
+        ["Omar effortlessly breaks down five trees and ties them together. Making a strong and sturdy raft.", ],
+        ["Using the raft you reach half way to the land mass in the center of the lake, before you see huge shadows swimming in the water.", ],
+        // Set timer
+        ["Your bullets hit the shadow making the water bleed red. This irritates the other shadows and the next second you see monstrous fish monsters leap out of the water and try to bite at your face.", ],
+        // Set timer
+        ["Waiting for a bit you believe that the shadows will pass the raft, but the next moment you see monstrous fish monsters leaping out of the water and trying to bite at your face.", ],
+        ["With impeccable aim and speed you are able to defend the raft.", ],
+        ["Shooting at the water zergs while the crew paddles the raft. You reach the land mass.", ],
+        // Set timer
+        ["You dodge the incoming attacks.", ],
+        ["Steading your aim and landing your shots on the water zergs. The crew successfully makes it to the land mass.", ],
+        ["You successfully keep dodging the water zergs and as you make it closer to the land mass. You can't help but think that the water zergs are decreasing their attacks, so when you turn to look around you find yourself alone on the raft.", ],
+        ["Pulling the raft onto the land mass, You finally have time to breath and look around.", ],
+        ["Hiking up a relatively small hill you can get an overview of the land and you pull out the track, letting it direct you in the direction of the fourth piece.", ],
+        ["Surprisingly there were no other life forms on the land mass beside vegetation.", ],
+        // Add fourth piece
+        ["You find the fourth piece of the recon beacon in a crater, with lush green grass growing around.", ],
+        ["With a sigh you grudgingly walk back to the raft and prepare for a second round of attacks from the water zergs.", ],
+        ["Omar does a quick inspection of the raft, to find any parts that need re-tightening. Omar then gives you a signal indicating that the raft is good to go.", ],
+        ["Getting on the raft, the crew resumes their previous roles.", ],
+        ["After another round of fending off the water zergs the crew makes it back to land. From there, they head back to the home base.", ],
+        // Go to missions page
+    ],
     // mission 4
-    [[]],
+    [
+        ["Preparing your items to go collect the final piece. You hike up a trail and see a gigantic zerg on top of the mountain. Taking its time to stretch, the zerg then lets out a roar. Looking down at the tracker and it points you in the same direction of the gigantic zerg.", ],
+        ["Returning back to the base, it takes a few minutes of brainstorming for Omar to say that the ship had powerful bombs to handle zergs of that size.", ],
+        ["Knowing that both of the ships did not have any explosives, Dan says for Eve to calculate possible locations of where the bomb may have landed and not have been damaged by the crash", ],
+        ["Heading off to the approximate location, you are back in the forest. The trees there have been growing for countless amount of years, letting the trees reach high above the ground, blocking out the sun.", ],
+        ["You look down at your map and you see your location getting closer to the big circle(zone) on the map indicating Eve's approximate location of the bomb.", ],
+        ["Immediately once you are in the zone, it starts to shrink and give you a more precise location of the bomb.", ],
+        ["Now that you have a more precise location you", ],
+        ["Taking your time to search around, you spot a humanoid scaly zerg with four arms.", ],
+        ["You kill the tree zerg in one shot, its body falls to the ground and Dan goes up to inspect the body.", ],
+        ['After examining the body Dan says, "These tree zergs are extremely mobile, and have strong limbs allowing them to rip apart their enemy. "', ],
+        ["You and your teammates quietly make it past the tree zerg only to be spotted by another tree zerg. The tree zerg immidatly screams, alerting the other tree zergs of your presence", ],
+        ["Continuing on the path, you hear the trees rustle and then spot a tree zerg looking at you. Before you could do anything, the tree zerg inhales and then lets out a loud scream.", ],
+        ["You get there much quicker with the help of a predestined location", ],
+        ["You hear a loud inhuman scream. Looking up you see an almost humanoid scaly zerg with four arms.", ],
+        ["The tree zerg screams once again, and in the distance you hear screams, almost like the tree zerg was calling for back-up.", ],
+        ["Seeing the pack of tree zergs launching themselves through the trees. You know that you can not take them all on at the same time, so you look around to see if there is a place to get an advantage over the tree zergs. You quickly spot a large boulder with a narrow crack in the middle, almost large enough for a grown man to squeeze through. Immediately you tell your companions to drop their bags and get in the crack.", ],
+        ["As each person quickly cramps themselves in the crack, you are the last to get in, but all your companions squeeze themselves in the crack. You only have an arm's length of room before your body sticks out of the crack.", ],
+        // Set timer
+        ["Waiting for the tree zergs to come you...", ],
+        ["Steadying your hand you wait for a tree zerg to arrive.", ],
+        ["Killing the tree zerg, it falls to the floor and multiple screams of anguish accompanies it. With a brief moment of no movement from both parties, multiple hands start to try and pry their way in and grab you.", ],
+        ["Adrenaline flowing through you. You take aim once again and start firing at the tree zergs.", ],
+        ["After two hours of you constantly having to kill and be aware of multiple hand, the scream of the last tree zergs rings out and now you have a moment to breath and calm your nerves down.", ],
+        ["Pushing yourself out of the crack and pushing the piles of corpses away from the crack. You look around the piles of corpses and make sure there is no hidden threats.", ],
+        ["Helping your companions out of the crack, the crew resumes on their journey to the find the bomb.", ],
+        ['Up above in the trees you see circular homes of many sticks weaving together. Dan: "These seem to be the homes of the tree zergs, we encountered earlier. We should proceed with caution."', ],
+        ["Proceeding with caution, you find to your surprise that the homes are all empty and that there were traces of the tree zergs fleeing from their settlements.", ],
+        ["You don't want to think any further on this and count it as a lucky situation.", ],
+        // Add bomb to inventory
+        ["Using the tracker you quickly find the bomb under some leaves.", ],
+        ["You make quick haste back to the base, to get ready for the final battle.", ],
+        // Go to mission page
+    ],
     // mission 5
-    [[]],
+    [
+        ["You arrive at the second ship with a chance to prepare one last time to defeat the mother zerg and get the final piece.", ],
+        // after click from upbove reset hp to 100 and add some ammo
+        ["You leave", ],
+        ["While you walk you talk to the zoologist about the mother zerg", ],
+        ["Dan: Ever since we encountered the mother zerg I've been observing it.", ],
+        ["What have you found?", ],
+        ["Dan:I've noticed that the mother zerg has moved its previous nest to where the final piece is. I’m guessing the mother zerg finds comfort from the electrical waves the final piece emits.", ],
+        ["Can’t we scare it away from the piece? Can’t we scare it away from the piece?", ],
+        ["Dan:I don’t think so, and that's going to be dangerous.", ],
+        ["Well, okay don't worry. We have prepared enough to take it down.(as you tap the bomb)", ],
+        ["Dan:I did notice that it has a major flaw though.", ],
+        ["What is it?", ],
+        ["Dan:It’s the flaps on its head that allows it to breathe, if you can get a few shots at it or manage to stick the bomb there you could probably knock it out in a few hits.", ],
+        ["So aim for the head?", ],
+        ["Ending your conversation with Dan, you continue down the path and encounter multiple heavily armored zergs along the way", ],
+        ["You get to the edge of the hill and quickly climb up the tree to hide. Peaking through the top of the leaves you can partially see the mother zerg.", ],
+        ["Keep hiding", ],
+        ["You see a chance to pounce on the mother.", ],
+        ["You hit it with a disorienting blow giving you a chance to shoot as she gasps for air.", ],
+        ["You find a vantage point where you can place a few shots while being hidden.", ],
+        ["You place a few shots as it breathes disorienting and angering the mother zerg.", ],
+        ["You manage to land a shot on its breath, dealing a lot of damage and disorienting it.", ],
+        ["Getting out of sight and finding cover from the mother zerg and its guards. You decide to stay put to use the med kit.", ],
+        ["You get a chance to activate the bomb", ],
+        // After activating the bomb, it has a 10% chance to end(The bomb fails to explode and you travel back to the ship hoping that one day you will escape.)
+        ["The bomb has a one minute timer and you encounter multiple guard zergs in this time.", ],
+        // If you die in battle goes to end(You and your team are consumed by the mother zerg’s guards before the bomb gets a chance to detonate.)
+        // Add fifth piece
+        ["The bomb goes off! Killing the mother zerg and making all of its guards flee away.", ],
+        ["Omar installs the final piece of the recon beacon together and starts the beacon.", ],
+        // End card (The Mother ship responds to your distress call and you escape Valkto with your team.)
+        ["", ],
+        ["", ],
+        ["", ],
+        ["", ],
+        ["", ],
+        ["", ],
+        ["", ],
+        ["", ],
+        ["", ],
+        
+    ],
 ];
 
 // First is the dialogue, second is the row (starts at 0 and the next number is the card in figma 10 is 0.10), third is death message, fourth is false:dialogue True:dialogue
