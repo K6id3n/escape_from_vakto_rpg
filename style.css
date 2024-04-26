@@ -102,11 +102,29 @@ header .tit {
 }
 
 .newh {
-    top: -10%;
+    top: -15%;
     transition: all 2s ease;
 }
 
+.dic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 2s ease;
+}
 
+.newdic {
+    top: 50%;
+    transition: all 2s ease;
+}
+
+#num {
+    font-size: 5dvw;
+}
 
 .pro {
     display: none;

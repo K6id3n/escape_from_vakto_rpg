@@ -479,6 +479,17 @@ function loadsave() {
 
 function  dice() {
      document.querySelector('.srt').style.display = 'none';
-     document.querySelector('.head').classList.toggle('newh')
      document.querySelector('.dic').style.display = 'flex';
+     document.querySelector('.head').classList.toggle('newh')
+     document.querySelector('.dic').classList.toggle('newdic');
+     for (i = 0; i < 99; i++) {
+        setTimeout(function() {
+            document.getElementById('num').innerHTML = Math.floor(Math.random() * 10);
+            if (i >= 99) {
+                console.log(i + " = " + "99")
+                document.getElementById('num').innerHTML = Math.floor((Math.random() * 3) + 1);
+            }
+        }, 50 * i)
+     }
+  
 }
