@@ -474,4 +474,6 @@ let background = [
 
 function  dice() {
      document.querySelector('.srt').style.display = 'none';
+     document.querySelector('.head').classList.toggle('newh')
+     document.querySelector('.dic').style.display = 'flex';
 }
