@@ -441,20 +441,51 @@ const next1Dot2 = new Cards("Next", '0.2', ' ', true)
 const next1Dot3 = new Cards("Next", '0.3', ' ', true)
 const option1Dot1 = new Cards("You choose to stay put and survive", '0.4', ' ', false)
 const option1Dot2 = new Cards("You choose to leave the lounge room.", '0.1', ' ', false)
-const dead1Dot1 = new Cards("death", null, 'You are eventually eaten by zergs with no way to protect yourself.', false)
-
+const Sdead4 = new Cards("death", null, 'You are eventually eaten by zergs with no way to protect yourself.', false)
+const Sdead44 = new Cards("death", null, ' Forgetting your original goal of building the recon beacon, time flies by and the Mothership has deemed you dead.', false)
 // Soldier options:(will tell you where it goes on click)
-// 2: 
-// 3: 
-// 4: 
-// 5: 
-// 6: 
-// 7: 
-// 8: 
-// 9: 
-// 10: 
-// 11: 
-// 12: 
+// 3: You choose to stay put and survive (Sdead4) | You choose to leave the lounge room. (5)
+// 5: Choose to go back and stay put and survive(Sdead4) | Make your way to the command room (6)
+// 6: Next(7)
+// 7: Search around the command room (9) | Inspect commander John's body (8)
+// 8: Next(9)
+// 9: Ask Eve to do a damage check on the ship. (11) | Ask Eve to contact the mother ship to send a rescue team. (10)
+// 10: Ask Eve to do a damage check on the ship.(11)
+// 11: Tell me what programs need to be restarted. (12) | Ask Eve to contact the mother ship to send a rescue team. (10)
+// 12: Next (13)
+// 13: Next (14)
+// 14: How do I restart the emergency power system? (17) | Can't I just wait a bit for someone more suitable to come here? I can't be the only one who survived the crash. (15)
+// 15: Next (16)
+// 16: Next (22)
+// 17: Leave to the power room. (18)
+// 18: Next (19)
+// 19: Head back to the command room. (21) | Go look around the ship to try and scavenge whatever your hands could get on. (20)
+// 20: You decide to go with Dan to find the recon beacon. (25)
+// 21: Next (22)
+// 22: Next (23)
+// 23: Next (24)
+// 24: You decide to go with Dan to find the recon beacon. (25/add tracker to inventory)
+// 25: Next (26)
+// 26: Next (27)
+// reminder end of first ship
+// 27: Next (28)
+// 28: Next (29)
+// 29: Are there any other survivors? (31) | What have you been doing? (30)
+// 30: Next(32)
+// 31: What have you been doing? (30)
+// 32: Next (33)
+// 33: Next (34)
+// 34: Next (35)
+// 35: Next (36/circut puzzle)
+// 36: (add frame and first piece to inventory) Search the ship. (37) | Ask Seth what else is on the ship. (38)
+// 37: Try to open the armory (38) 
+// 38: Next (39/circuts)
+// 39: Next (40)
+// 40: (add lazer gun & ammo) Choose to leave the ship. (41) | Following Eve's previous instructions, you sync the tracker to the frame to find the other pieces. (43)
+// 41: Nah we should go. (Sdeath44) | Wait a minute, I think we are forgetting something. (42)
+// 42: Following Eve's previous instructions, you sync the tracker to the frame to find the other pieces. (43)
+// 43: Next(goes to mission page)
+
 
 let background = [
     // 1-3 Soldier(Neo) 43 CARDS
@@ -468,7 +499,7 @@ let background = [
         // 3 ↓
         ["You know before the crash you were in the lounge room with a couple other people, but you just see corpses.", ],
         // 4 ↓
-        ['death', dead1Dot1],
+        ['death', Sdead4],
         // 5 ↓
         ["You choose to leave the lounge room.", ],
         // 6 ↓
@@ -552,6 +583,9 @@ let background = [
         // 43 ↓
         ["Hooking up the tracker to one of the ship's screens you see four red dots on a rough sketch of the planet's terrain, one forest, one in a lake, one in a cave, and one in the mountain.", ]
         // goes to mission page
+        // deaths will go here
+        // 44 ↓
+        ["death", death1Dot44],
     ],
     // 4-5 Dan 13 CARDS
     [
