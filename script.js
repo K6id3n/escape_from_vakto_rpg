@@ -540,23 +540,32 @@ let background = [
     // 1-3 Soldier(Neo) 43 CARDS
     [
         // 0 ↓
-        ["You are one of the many soldiers with the duty of patrolling the space craft protecting the Mothership.", next1Dot1],
+        ["You are one of the many soldiers with the duty of patrolling the space craft protecting the Mothership.",
+         next1Dot1],
         // 1 ↓
-        ["The ships around the Mothership gets surprised attacked by zergs. The space craft your on happens to be closest to the start of the Zerg's attack, having the space craft your on to crash land on the planet Vakto.", next1Dot2],
+        ["The ships around the Mothership gets surprised attacked by zergs. The space craft your on happens to be closest to the start of the Zerg's attack, having the space craft your on to crash land on the planet Vakto.",
+         next1Dot2],
         // 2 ↓
-        ["You wake up with ringing ears, and blurry vision. As time passes your hearing and vision get clearer, allowing you to see that the ship is badly damaged with wires sticking out the steel wall and you could hear a faint sound of crackling fire. You also see blood stains on the floor and walls.", next1Dot3],
+        ["You wake up with ringing ears, and blurry vision. As time passes your hearing and vision get clearer, allowing you to see that the ship is badly damaged with wires sticking out the steel wall and you could hear a faint sound of crackling fire. You also see blood stains on the floor and walls.",
+         next1Dot3],
         // 3 ↓
-        ["You know before the crash you were in the lounge room with a couple other people, but you just see corpses.", ],
+        ["You know before the crash you were in the lounge room with a couple other people, but you just see corpses.",
+     ],
         // 4 ↓
-        ['death', Sdead4],
+        ['death',
+         Sdead4],
         // 5 ↓
-        ["You choose to leave the lounge room.", ],
+        ["You choose to leave the lounge room.",
+     ],
         // 6 ↓
-        ["Make your way to the command room", ],
+        ["Make your way to the command room", 
+     ],
         // 7 ↓
-        ["As you push open the command room's door you see the commander John dead in his chair.", ],
+        ["As you push open the command room's door you see the commander John dead in his chair.",
+     ],
         // 8 ↓
-        ["It looks like when the ship crashed, a broken fragment of the ship's wall was lodged into his body.", ],
+        ["It looks like when the ship crashed, a broken fragment of the ship's wall was lodged into his body.",
+     ],
         // 9 ↓
         ["As you touch the control panel, the screen glitches and makes a crackling sound. The image eventually forms into a figure in the corner of the screen. You recognize the shape as Eve, the ship's A.I.", ],
         // 10 ↓
@@ -899,16 +908,26 @@ function loadsave() {
 function  dice() {
      document.querySelector('.srt').style.display = 'none';
      document.querySelector('.dic').style.display = 'flex';
-     document.querySelector('.head').classList.toggle('newh')
+     document.querySelector('.head').classList.toggle('newh');
      document.querySelector('.dic').classList.toggle('newdic');
-     for (i = 0; i < 99; i++) {
-        setTimeout(function() {
+     for (i = 0; i < 99; i++) {  
+        if (i === 98) {
+            setTimeout(function() {
+                let path = Math.floor((Math.random() * 3) + 1);
+                 document.getElementById('num').innerHTML = path;
+                 diceAfter(path);
+            }, 50 * i)
+        } else {
+            setTimeout(function() {
             document.getElementById('num').innerHTML = Math.floor(Math.random() * 10);
-            if (i >= 99) {
-                console.log(i + " = " + "99")
-                document.getElementById('num').innerHTML = Math.floor((Math.random() * 3) + 1);
-            }
         }, 50 * i)
+        }
      }
   
+}
+
+function diceAfter(a) {
+    document.querySelector('.dic').classList.toggle('newdic');
+    // cardScene(background[a - 1][0]);
+    start(0, false)
 }
