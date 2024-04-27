@@ -163,17 +163,49 @@ const deaths13 = new Cards("death", null, 'Fleeing this early in the game... Sha
 const M2next1 = new Cards("Next", '1.1', ' ', true)
 const M2run2 = new Cards("Run!", '0.13', ' ', false)
 const M2fight3 = new Cards("Fight!", '0.3', ' ', false)
+// deaths ↓
 const M2deaths13 = new Cards("death", null, 'Your footsteps alert them of your position and the zergs quickly surround you and your companions.', false)
 const M2deaths14 = new Cards("death", null, 'You get overpowered by the vast amount of small agile zergs.', false)
 const M2deaths15 = new Cards("death", null, 'The super charged shot is able to shatter the rock… Along with a supporting structure behind the rock. You and your team are crushed to death.', false)
 const M2deaths16 = new Cards("death", null, 'You slip and fall over as the larger zerg catches up to you and drags you into the depths of the cave.', false)
 const M2deaths17 = new Cards("death", null, 'You miss the zerg and it gets a hold of you and drags you into the depths of the cave.', false)
 const M2deaths18 = new Cards("death", null, 'The laser gun is too loud and alerts the other bat zergs to your position, with their large population, they quickly overpower you.', false)
+// 2 ↓
+const M2optionTwo1 = new Cards("Fight with your gun.", '1.14', ' ', false)
+const M2optionTwo2 = new Cards("Fight with your melee weapon.", '1.3', ' ', false)
+// 3 ↓
+const M2next4 = new Cards("Continuing through the cave, you find resources along the way.", '1.4', ' ', true)
+// 4 ↓
+const M2optionFour1 = new Cards("Push it with the help of your team.", '1.5', ' ', false)
+const M2optionFour2 = new Cards("Super charge your laser gun and shoot it at the rock.", '1.15', ' ', false)
+// 5 ↓ 
+const M2optionFive1 = new Cards("Block!", '1.6', ' ', false)
+const M2optionFive2 = new Cards("Dodge!", '1.8', ' ', false)
+// 6 ↓
+const M2optionSix1 = new Cards("Shoot!", '1.7', ' ', false)
+const M2optionSix2 = new Cards("Try to run!", '1.17', ' ', false)
+// 7 ↓ (timer) is it also true? not false?
+const M2optionSevenLive = new Cards("You hit the zerg and kill with one strike.", '1.10', ' ', false)
+const M2optionSevenDeath = new Cards("You fail hit the zerg.", '1.17', ' ', false)
+// 8 ↓ (timer)
+const M2optionEightLive = new Cards("You get a chance to slice the bat zerg.", '1.9', ' ', false)
+const M2optionEightDeath = new Cards("You fail to slice the bat zerg.", '1.17', ' ', false)
+// 9 ↓
+const M2next10 = new Cards("Next", '1.10', ' ', true)
+// 10 ↓
+const M2optionTen1 = new Cards("Try to shoot the zergs.", '1.18', ' ', false)
+const M2optionTen2 = new Cards("Try to slice the zergs.", '1.11', ' ', false)
+// 11 ↓
+const M2next12 = new Cards("Next", '1.12', ' ', true)
+// 12 ↓
+// missionPage
+
+
 // mission 2 options:(will tell you where it goes on click)
 // 2: Fight with your gun. (death 14) | Fight with your melee weapon. (3)
 // 3: Continuing through the cave, you find resources along the way. (4)
 // 4: Push it with the help of your team. (5) | Super charge your laser gun and shoot it at the rock. (death 15)
-// 5: Block! (death16 / 6) | Dodge! (death16 / 8)
+// 5: Block! (death16? / 6) | Dodge! (death16? / 8)
 // 6: Shoot! (7) | Try to run! (death 17)
 // 7: (timer) You hit the zerg and kill with one strike.(death17 / 10)
 // 8: (timer) You get a chance to slice the bat zerg. (death17 / 9)
